@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Character encoding and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title -->
+    <title>Document</title>
+    
+    <!-- External CSS stylesheet (possible typo in filename: "ctyle.css" should be "style.css") -->
+    <link rel="stylesheet" href="ctyle.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation Header -->
+    <header>
+        <!-- Shop Logo / Brand Name -->
+        <h1><img src="https://cdn.vectorstock.com/i/750p/48/28/cake-logo-vector-25934828.avif" alt="" width="50"></h1>
+
+        <!-- Navigation Menu -->
+        <nav class="nav-list">
+            <ul class="ul-list">
+                <li class="li-list"><a href="#home">Home</a></li>
+                <li class="li-list"><a href="#about">About</a></li>
+                <li class="li-list"><a href="#menu">Menu</a></li>
+                <li class="li-list"><a href="#gallery">Gallery</a></li>
+                <li class="li-list"><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Search Box -->
+        <div class="search-wrapper">
+            <input type="search" id="search" placeholder="Search your favorite sweet...">
+        </div>
+
+        <!-- Menu and Cart Icons -->
+        <div class="menus">
+            <!-- Hamburger Menu Icon -->
+            <i class="fa-solid fa-bars" id="menusicon"></i>
+
+            <!-- Placeholder button (you can update this with a real function or remove if unnecessary) -->
+     
+            <!-- Cart Icon with Count -->
+            <div class="cart-icon">
+                <ion-icon name="cart-outline" id="cart-icon"></ion-icon>
+               
+            </div>
+        </div>
+    </header>
+
+    <!-- Shopping Cart Section -->
+    <div class="cart">
+        <!-- Cart Title -->
+        <div class="cart-title">Cart Items</div>
+
+        <!-- Dynamic Cart Items Will Be Added Here -->
+        <div class="cart-content"></div>
+
+        <!-- Cart Total Section -->
+        <div class="total">
+            <div class="total-title">Total</div>
+            <div class="total-price">Rs.0</div>
+        </div>
+
+        <!-- Place Order Button -->
+        <button class="btn-buy" id="buy-button" onclick="placerder()">Place Order</button>
+
+        <!-- Close Cart Icon -->
+        <ion-icon name="close" id="cart-close"></ion-icon>
+    </div>  
+    <section class="banner-design">
+        <div class="sweetbanner">
+         <h1>🍬 Loganathan Sweet Shop 🍬</h1>
+         <h1>Traditional Taste, Homemade with Love</h1>
+         <p></p>
+         <h2>🎉 Special Orders for Functions & Festivals Available</h2>
+         <h2>Free Delivery in Local Areas</h2>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+   
+    <main>
+
+        <!-- Banner Section with Welcome Message -->
+        <section class="banner">
+            <h2 class="menu-heading">About</h2>
+            <div class="banner-title">
+              
+                <!-- Banner Image -->
+                <div class="banner-img">
+                    <img src="https://media.istockphoto.com/id/1054228718/photo/indian-sweets-in-a-plate-includes-gulab-jamun-rasgulla-kaju-katli-morichoor-bundi-laddu.jpg?s=612x612&w=0&k=20&c=hYWCXLaldKvhxdBa83M0RnUij7BCmhf-ywWdvyIXR40=" alt="">
+                </div>
+                <!-- Welcome Text -->
+                <div class="banner-about">
+                    <h2>Welcome to Loganathan Sweet Shop</h2>
+                    <p class="sweet-description">
+                        Located in the heart of our village, we specialize in preparing fresh, homemade sweets using traditional recipes. Our services include bulk sweet orders, function sweet preparations, and daily sweet sales. Whether it’s for weddings, festivals, or special occasions, we ensure top-quality sweets with authentic taste.
+
+                        Our specialties include Ladoo, Jalebi, Mysore Pak, Badusha, and more, made with premium ingredients to maintain freshness and flavor. We take pride in delivering sweets that bring joy to every celebration.
+                        
+                        For orders and inquiries, visit our shop or contact us today!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="menu-section">
+            <h2 class="menu-heading">Our Special Sweets</h2>
+            <div class="menu-container">
+                <!-- Sweet items will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <h2 class="menu-heading">Sweet Moments Gallery</h2>
+            <div class="sweetimage">
+                <!-- Individual Sweet Images -->
+                <div class="switpic"><img src="https://tse1.mm.bing.net/th?id=OIP.6MDgZSzUUvYpSZ1mxA7TRgHaHa&w=474&h=474&c=7" alt="Ladoo"></div>
+                <div class="switpic"><img src="https://tse2.mm.bing.net/th?id=OIP.IFMIL7KsBYbLvKA4dOqVxwHaFj&w=355&h=355&c=7" alt="Jalebi"></div>
+                <div class="switpic"><img src="https://tse2.mm.bing.net/th?id=OIP.Tbb-Ce9c7QkFAfQ7mfEjhwHaKu&w=474&h=474&c=7" alt="Mysore Pak"></div>
+                <div class="switpic"><img src="https://tse2.mm.bing.net/th?id=OIP.9ac-aqCoCOx1ak1lamYe3gHaEK&w=266&h=266&c=7" alt="Badusha"></div>
+                <div class="switpic"><img src="https://tse4.mm.bing.net/th?id=OIP.BcYab7JhaIhqnFB13V_d7gHaIu&w=474&h=474&c=7" alt="Mixed Sweets"></div>
+            </div>
+        </section>
+
+    </main>
+             <!-- Contact Us -->
+             <section class="contact-us">
+              <h3> Contact Us</h3>
+              <h1 style="color: orangered;">Contact For Any Query</h1>
+              <div class="addrish">
+                  <div class="add">
+                      <h3>Address</h3>
+                      <p> Cheyyar - Vandavasi - Polur Road, Mambakkam, Tamil Nadu, India</p>
+                  </div>
+                  <div class="add">
+                      <h3>Contact Number</h3>
+                      <p>9361562206</p>
+                  </div>
+                  <div class="add">
+                      <h3>Email</h3>
+                      <p>lprathap381@gmail.com</p>
+                  </div>
+              </div>
+              
+      <div class="container">
+          <div class="contact-section">
+              <div class="map-container">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3892.4315345764267!2d79.39512557358371!3d12.685233071095022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52d300679ee1db%3A0x14955c36d6ab3fda!2sloganathan%20sweetshop!5e0!3m2!1sen!2sin!4v1743522719052!5m2!1sen!2sin" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="contact-form">
+                  
+                  <form id="formuser">
+                      <div class="form-group">
+                          <label for="username">Name:</label>
+                          <input type="text" id="username" placeholder="Enter your name">
+                          <span class="error" id="error-name"></span>
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="useremail">Email:</label>
+                          <input type="email" id="useremail" placeholder="Enter your email">
+                          <span class="error" id="error-email"></span>
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="usercontact">Contact:</label>
+                          <input type="text" id="usercontact" placeholder="Enter your phone number">
+                          <span class="error" id="error-contact"></span>
+                      </div>
+          
+                      <div class="form-group">
+                          <label for="usermessage">Message:</label>
+                          <textarea id="usermessage" placeholder="Write your message"></textarea>
+                          <span class="error" id="error-message"></span>
+                      </div>
+          
+                      <button type="submit">Submit</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+              </div>
+          
+          </section>
+          <footer class="footer">
+              <div>
+                  <h4>Quick Links</h4>
+                  <ul>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                      <li><a href="#">Team</a></li>
+                      <li><a href="#">Gallery</a></li>
+                      <li><a href="#">Contact</a></li>
+                  </ul>
+              </div>
+              <div class="contact-info">
+                  <h4>Contact</h4>
+                  <p>📍 Cheyyar - Vandavasi - Polur Road, Mambakkam, Tamil Nadu, India</p>
+                  <p>📞 9095743952</p>
+                  <p>✉ info@example.com</p>
+              </div>
+              <div >
+                  <h4>Opening</h4>
+                  <p class="Opening"><strong>Monday - Saturday</strong><br>7:00 AM - 10:00 PM</p>
+                  <p><strong>Sunday</strong><br>8:30 AM - 09:30 PM</p>
+              </div>
+              <div>
+                  <h4>Social Links</h4>
+                  <div class="social-icons">
+                      <a href="#">✖</a>
+                      <a href="#">📘</a>
+                      <a href="#">▶</a>
+                      <a href="#">🔗</a>
+                  </div>
+              </div>
+          </footer>
+        </main>
+         <table>
+                              
+                          </table> 
+
+
+    <!-- JavaScript File for Functionality -->
+    <script src="scripth.js"></script>
+
+    <!-- Ionicons Library for Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
